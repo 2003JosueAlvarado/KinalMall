@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="931.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josuealvarado.controller.AdministracionController">
+   <children>
+      <AnchorPane prefHeight="410.0" prefWidth="234.0" style="-fx-background-color: #007AF3;">
+         <children>
+            <AnchorPane layoutX="31.0" prefHeight="161.0" prefWidth="173.0" style="-fx-background-color: #F9BF39; -fx-background-radius: 0 0 50 50;">
+               <children>
+                  <ImageView fitHeight="117.0" fitWidth="106.0" layoutX="34.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Administracion.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="19.0" layoutY="-2.0" prefHeight="33.0" prefWidth="132.0" text="Administración">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <VBox layoutX="-1.0" layoutY="169.0" prefHeight="135.0" prefWidth="234.0">
+               <children>
+                  <Button fx:id="btnNuevo" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#nuevo" prefHeight="41.0" prefWidth="305.0" styleClass="button1" stylesheets="@../resource/KinalMallCCS.css" text="Nuevo">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/nuevo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminar" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="41.0" prefWidth="305.0" styleClass="button1" stylesheets="@../resource/KinalMallCCS.css" text="Eliminar">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEditar" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="51.0" mnemonicParsing="false" onAction="#editar" prefHeight="41.0" prefWidth="305.0" styleClass="button1" stylesheets="@../resource/KinalMallCCS.css" text="Editar">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReporte" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="92.0" mnemonicParsing="false" onAction="#reporte" prefHeight="41.0" prefWidth="305.0" styleClass="button1" stylesheets="@../resource/KinalMallCCS.css" text="Reporte">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutY="376.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/homr-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="234.0" prefHeight="61.0" prefWidth="681.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="199.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="84.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="94.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="274.0" minWidth="10.0" prefWidth="274.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="20.0" prefWidth="218.0" text="Código Administración">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="33.0" prefWidth="132.0" text="Dirección" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtCodigoAdministracion" editable="false" prefHeight="27.0" prefWidth="225.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDireccion" editable="false" prefHeight="27.0" prefWidth="225.0" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Label layoutX="400.0" layoutY="61.0" prefHeight="33.0" prefWidth="132.0" text="Teléfono">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTelefono" editable="false" layoutX="486.0" layoutY="59.0" prefHeight="10.0" prefWidth="123.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblAdministracion" layoutX="242.0" layoutY="134.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="261.0" prefWidth="675.0" stylesheets="@../resource/KinalMallCCS.css">
+        <columns>
+          <TableColumn fx:id="colCodigoAdministracion" prefWidth="139.0" text="Código Administracion" />
+          <TableColumn fx:id="colDireccion" prefWidth="426.0" text="Dirección" />
+            <TableColumn fx:id="colTelefono" prefWidth="109.0" text="Teléfono" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

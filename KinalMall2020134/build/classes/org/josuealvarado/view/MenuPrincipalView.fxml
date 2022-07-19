@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josuealvarado.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="419.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fondo.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="2.0" stylesheets="@../resource/KinalMallCCS.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Módulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#VentanaAdministracion" text="Administración" />
+                  <MenuItem mnemonicParsing="false" onAction="#VentanaLocales" text="Locales" />
+                  <MenuItem mnemonicParsing="false" onAction="#VentanaTipoClientes" text="Tipos de Clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#VentanaClientes" text="Clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#VentanaProveedores" text="Proveedores" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaCargos" text="Cargos" />
+                  <MenuItem mnemonicParsing="false" onAction="#VentanaDepartamentos" text="Departamentos" />
+                  <MenuItem mnemonicParsing="false" onAction="#VentanaCuentasPorPagar" text="Cuentas por Pagar" />
+                  <MenuItem mnemonicParsing="false" onAction="#VentanaHorarios" text="Horarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEmpleados" text="Empleados" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
